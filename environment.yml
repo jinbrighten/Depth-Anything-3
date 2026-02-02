@@ -1,0 +1,16 @@
+name: da3
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch>=2.0
+  - torchvision
+  - pytorch-cuda=12.1
+  - pip
+  - pip:
+      - -e .
+      - xformers
+      - gradio>=5
